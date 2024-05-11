@@ -8,6 +8,7 @@ namespace WargearGenerator
 {
     internal abstract class Wargear
     {
+        protected string description;
         protected string name;
         protected Rarity rarity;
         protected ItemType type;
@@ -17,6 +18,7 @@ namespace WargearGenerator
         public string Name { get { return name; } }
         public Rarity Rarity { get { return rarity; } }
         public ItemType Type { get { return type; } }
+        public string Description { get => description; set => description = value; }
 
     }
 

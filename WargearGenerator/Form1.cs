@@ -188,6 +188,9 @@ namespace WargearGenerator
             labelDamage.Text = string.Empty;
             labelKeywords.Text = string.Empty;
             labelRarity.Text = string.Empty;
+            itemName.Text = string.Empty;
+            itemDescription.Text = string.Empty;
+            itemRarity.Text = string.Empty; 
         }
 
         private void display(Wargear gear)
@@ -256,6 +259,30 @@ namespace WargearGenerator
                     sb.Append("]");
                     labelKeywords.Text = sb.ToString();
                 }
+            }
+            else
+            {
+                
+
+                if (gear.Rarity == Rarity.Rare)
+                {
+                    itemRarity.Text = "Rare";
+                }
+                else if (gear.Rarity == Rarity.Common)
+                {
+                    itemRarity.Text = "Common";
+                }
+                else if (gear.Rarity == Rarity.Uncommon)
+                {
+                    itemRarity.Text = "Uncommon";
+                }
+                else if (gear.Rarity == Rarity.Legendary)
+                {
+                    itemRarity.Text = "Legendary";
+                }
+                itemName.Text = gear.Name;
+
+                itemDescription.Text = gear.Description;
             }
         }
 

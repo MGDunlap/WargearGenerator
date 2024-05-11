@@ -62,10 +62,16 @@
             this.groupBoxFaction = new System.Windows.Forms.GroupBox();
             this.radioButtonOrks = new System.Windows.Forms.RadioButton();
             this.radioButtonSM = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.itemRarity = new System.Windows.Forms.Label();
+            this.itemName = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.itemDescription = new System.Windows.Forms.TextBox();
             this.groupBoxType.SuspendLayout();
             this.groupBoxRarity.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBoxFaction.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxType
@@ -418,7 +424,7 @@
             this.groupBoxFaction.Controls.Add(this.radioButtonSM);
             this.groupBoxFaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxFaction.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.groupBoxFaction.Location = new System.Drawing.Point(452, 57);
+            this.groupBoxFaction.Location = new System.Drawing.Point(452, 59);
             this.groupBoxFaction.Name = "groupBoxFaction";
             this.groupBoxFaction.Size = new System.Drawing.Size(150, 212);
             this.groupBoxFaction.TabIndex = 5;
@@ -448,12 +454,64 @@
             this.radioButtonSM.Text = "Space Marines";
             this.radioButtonSM.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.itemDescription);
+            this.panel2.Controls.Add(this.itemRarity);
+            this.panel2.Controls.Add(this.itemName);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Location = new System.Drawing.Point(626, 59);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(259, 212);
+            this.panel2.TabIndex = 16;
+            // 
+            // itemRarity
+            // 
+            this.itemRarity.AutoSize = true;
+            this.itemRarity.Location = new System.Drawing.Point(64, 9);
+            this.itemRarity.Name = "itemRarity";
+            this.itemRarity.Size = new System.Drawing.Size(0, 13);
+            this.itemRarity.TabIndex = 15;
+            // 
+            // itemName
+            // 
+            this.itemName.AutoSize = true;
+            this.itemName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemName.Location = new System.Drawing.Point(8, 39);
+            this.itemName.Name = "itemName";
+            this.itemName.Size = new System.Drawing.Size(57, 17);
+            this.itemName.TabIndex = 6;
+            this.itemName.Text = "[name]";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(4, 4);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(45, 20);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Item";
+            // 
+            // itemDescription
+            // 
+            this.itemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemDescription.Location = new System.Drawing.Point(11, 59);
+            this.itemDescription.Multiline = true;
+            this.itemDescription.Name = "itemDescription";
+            this.itemDescription.ReadOnly = true;
+            this.itemDescription.Size = new System.Drawing.Size(231, 146);
+            this.itemDescription.TabIndex = 16;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(971, 566);
+            this.ClientSize = new System.Drawing.Size(939, 566);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBoxFaction);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonClear);
@@ -470,6 +528,8 @@
             this.panel1.PerformLayout();
             this.groupBoxFaction.ResumeLayout(false);
             this.groupBoxFaction.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -510,6 +570,11 @@
         private System.Windows.Forms.GroupBox groupBoxFaction;
         private System.Windows.Forms.RadioButton radioButtonOrks;
         private System.Windows.Forms.RadioButton radioButtonSM;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label itemRarity;
+        private System.Windows.Forms.Label itemName;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox itemDescription;
     }
 }
 
